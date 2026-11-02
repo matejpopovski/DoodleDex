@@ -1,0 +1,9 @@
+{
+  "samples": 4000,
+  "top1_agreement": 1.0,
+  "max_probability_difference": 4.380941390991211e-06,
+  "core_ml_top1": 0.8838,
+  "pytorch_top1": 0.8838,
+  "model_megabytes": 1.158,
+  "fixture_cases": 194
+}

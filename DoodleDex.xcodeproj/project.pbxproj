@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0D1E0000000000000000011 /* DoodleCore in Frameworks */ = {isa = PBXBuildFile; productRef = D0D1E0000000000000000F01 /* DoodleCore */; };
+		D0D1E0000000000000000012 /* DoodleCore in Frameworks */ = {isa = PBXBuildFile; productRef = D0D1E0000000000000000F02 /* DoodleCore */; };
+		D0D1E0000000000000000013 /* ParityFixtures in Frameworks */ = {isa = PBXBuildFile; productRef = D0D1E0000000000000000F03 /* ParityFixtures */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0D1E0000000000000000021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D1E0000000000000000A01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D1E0000000000000000B01;
+			remoteInfo = DoodleDex;
+		};
+		D0D1E0000000000000000022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D1E0000000000000000A01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D1E0000000000000000B01;
+			remoteInfo = DoodleDex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0D1E0000000000000000031 /* DoodleDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoodleDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D1E0000000000000000032 /* DoodleDexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoodleDexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D1E0000000000000000033 /* DoodleDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoodleDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D0D1E0000000000000000041 /* DoodleDex */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DoodleDex;
+			sourceTree = "<group>";
+		};
+		D0D1E0000000000000000042 /* DoodleDexTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DoodleDexTests;
+			sourceTree = "<group>";
+		};
+		D0D1E0000000000000000043 /* DoodleDexUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DoodleDexUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0D1E0000000000000000051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1E0000000000000000011 /* DoodleCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1E0000000000000000052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1E0000000000000000012 /* DoodleCore in Frameworks */,
+				D0D1E0000000000000000013 /* ParityFixtures in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1E0000000000000000053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0D1E0000000000000000061 = {
+			isa = PBXGroup;
+			children = (
+				D0D1E0000000000000000041 /* DoodleDex */,
+				D0D1E0000000000000000042 /* DoodleDexTests */,
+				D0D1E0000000000000000043 /* DoodleDexUITests */,
+				D0D1E0000000000000000062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D1E0000000000000000062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1E0000000000000000031 /* DoodleDex.app */,
+				D0D1E0000000000000000032 /* DoodleDexTests.xctest */,
+				D0D1E0000000000000000033 /* DoodleDexUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D1E0000000000000000B01 /* DoodleDex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D1E0000000000000000C02 /* Build configuration list for PBXNativeTarget "DoodleDex" */;
+			buildPhases = (
+				D0D1E0000000000000000071 /* Sources */,
+				D0D1E0000000000000000051 /* Frameworks */,
+				D0D1E0000000000000000081 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0D1E0000000000000000041 /* DoodleDex */,
+			);
+			name = DoodleDex;
+			packageProductDependencies = (
+				D0D1E0000000000000000F01 /* DoodleCore */,
+			);
+			productName = DoodleDex;
+			productReference = D0D1E0000000000000000031 /* DoodleDex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0D1E0000000000000000B02 /* DoodleDexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D1E0000000000000000C03 /* Build configuration list for PBXNativeTarget "DoodleDexTests" */;
+			buildPhases = (
+				D0D1E0000000000000000072 /* Sources */,
+				D0D1E0000000000000000052 /* Frameworks */,
+				D0D1E0000000000000000082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D1E0000000000000000091 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D0D1E0000000000000000042 /* DoodleDexTests */,
+			);
+			name = DoodleDexTests;
+			packageProductDependencies = (
+				D0D1E0000000000000000F02 /* DoodleCore */,
+				D0D1E0000000000000000F03 /* ParityFixtures */,
+			);
+			productName = DoodleDexTests;
+			productReference = D0D1E0000000000000000032 /* DoodleDexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0D1E0000000000000000B03 /* DoodleDexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D1E0000000000000000C04 /* Build configuration list for PBXNativeTarget "DoodleDexUITests" */;
+			buildPhases = (
+				D0D1E0000000000000000073 /* Sources */,
+				D0D1E0000000000000000053 /* Frameworks */,
+				D0D1E0000000000000000083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D1E0000000000000000092 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D0D1E0000000000000000043 /* DoodleDexUITests */,
+			);
+			name = DoodleDexUITests;
+			productName = DoodleDexUITests;
+			productReference = D0D1E0000000000000000033 /* DoodleDexUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D1E0000000000000000A01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					D0D1E0000000000000000B01 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					D0D1E0000000000000000B02 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = D0D1E0000000000000000B01;
+					};
+					D0D1E0000000000000000B03 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = D0D1E0000000000000000B01;
+					};
+				};
+			};
+			buildConfigurationList = D0D1E0000000000000000C01 /* Build configuration list for PBXProject "DoodleDex" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0D1E0000000000000000061;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D0D1E0000000000000000E01 /* XCLocalSwiftPackageReference "Packages/DoodleCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D0D1E0000000000000000062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D1E0000000000000000B01 /* DoodleDex */,
+				D0D1E0000000000000000B02 /* DoodleDexTests */,
+				D0D1E0000000000000000B03 /* DoodleDexUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0D1E0000000000000000081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1E0000000000000000082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1E0000000000000000083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0D1E0000000000000000071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1E0000000000000000072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1E0000000000000000073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0D1E0000000000000000091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D1E0000000000000000B01 /* DoodleDex */;
+			targetProxy = D0D1E0000000000000000021 /* PBXContainerItemProxy */;
+		};
+		D0D1E0000000000000000092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D1E0000000000000000B01 /* DoodleDex */;
+			targetProxy = D0D1E0000000000000000022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0D1E0000000000000000D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D0D1E0000000000000000D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D1E0000000000000000D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DoodleDex;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matejpopovski.DoodleDex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D0D1E0000000000000000D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DoodleDex;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matejpopovski.DoodleDex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D0D1E0000000000000000D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matejpopovski.DoodleDexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoodleDex.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoodleDex";
+			};
+			name = Debug;
+		};
+		D0D1E0000000000000000D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matejpopovski.DoodleDexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoodleDex.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoodleDex";
+			};
+			name = Release;
+		};
+		D0D1E0000000000000000D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matejpopovski.DoodleDexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = DoodleDex;
+			};
+			name = Debug;
+		};
+		D0D1E0000000000000000D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matejpopovski.DoodleDexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = DoodleDex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0D1E0000000000000000C01 /* Build configuration list for PBXProject "DoodleDex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1E0000000000000000D01 /* Debug */,
+				D0D1E0000000000000000D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D1E0000000000000000C02 /* Build configuration list for PBXNativeTarget "DoodleDex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1E0000000000000000D03 /* Debug */,
+				D0D1E0000000000000000D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D1E0000000000000000C03 /* Build configuration list for PBXNativeTarget "DoodleDexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1E0000000000000000D05 /* Debug */,
+				D0D1E0000000000000000D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D1E0000000000000000C04 /* Build configuration list for PBXNativeTarget "DoodleDexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1E0000000000000000D07 /* Debug */,
+				D0D1E0000000000000000D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D0D1E0000000000000000E01 /* XCLocalSwiftPackageReference "Packages/DoodleCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DoodleCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0D1E0000000000000000F01 /* DoodleCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DoodleCore;
+		};
+		D0D1E0000000000000000F02 /* DoodleCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DoodleCore;
+		};
+		D0D1E0000000000000000F03 /* ParityFixtures */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ParityFixtures;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D0D1E0000000000000000A01 /* Project object */;
+}

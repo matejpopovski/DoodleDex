@@ -1,0 +1,315 @@
+{
+  "split": "stroke test",
+  "index_range_per_class": [
+    500,
+    1000
+  ],
+  "drawings": 50000,
+  "prefixes": 263152,
+  "pipeline_gap": {
+    "drawings": 50000,
+    "top1_on_published_bitmaps": 0.8838,
+    "top1_on_pipeline_rendering": 0.8824,
+    "top1_on_published_bitmaps_recognized_only": 0.9181,
+    "share_recognized_by_the_game": 0.9335,
+    "top_guess_changed": 0.0101,
+    "mean_abs_pixel_error": 0.694,
+    "p99_abs_pixel_error": 1.477
+  },
+  "accuracy_by_strokes_drawn": [
+    {
+      "strokes": 1,
+      "prefixes": 50000,
+      "top1": 0.2556,
+      "top5": 0.4428,
+      "top1_finished_drawings_with_this_many": 0.9152,
+      "mean_raw_confidence": 0.5166
+    },
+    {
+      "strokes": 2,
+      "prefixes": 43711,
+      "top1": 0.4473,
+      "top5": 0.6686,
+      "top1_finished_drawings_with_this_many": 0.9205,
+      "mean_raw_confidence": 0.5781
+    },
+    {
+      "strokes": 3,
+      "prefixes": 36705,
+      "top1": 0.5795,
+      "top5": 0.792,
+      "top1_finished_drawings_with_this_many": 0.9126,
+      "mean_raw_confidence": 0.6277
+    },
+    {
+      "strokes": 4,
+      "prefixes": 29552,
+      "top1": 0.6507,
+      "top5": 0.8476,
+      "top1_finished_drawings_with_this_many": 0.9023,
+      "mean_raw_confidence": 0.652
+    },
+    {
+      "strokes": 5,
+      "prefixes": 23644,
+      "top1": 0.6913,
+      "top5": 0.8765,
+      "top1_finished_drawings_with_this_many": 0.8825,
+      "mean_raw_confidence": 0.6727
+    },
+    {
+      "strokes": 6,
+      "prefixes": 18706,
+      "top1": 0.7159,
+      "top5": 0.8951,
+      "top1_finished_drawings_with_this_many": 0.8863,
+      "mean_raw_confidence": 0.6861
+    },
+    {
+      "strokes": 7,
+      "prefixes": 14643,
+      "top1": 0.7312,
+      "top5": 0.9078,
+      "top1_finished_drawings_with_this_many": 0.8776,
+      "mean_raw_confidence": 0.692
+    },
+    {
+      "strokes": 8,
+      "prefixes": 11252,
+      "top1": 0.7357,
+      "top5": 0.9107,
+      "top1_finished_drawings_with_this_many": 0.8636,
+      "mean_raw_confidence": 0.6896
+    },
+    {
+      "strokes": 9,
+      "prefixes": 8584,
+      "top1": 0.733,
+      "top5": 0.909,
+      "top1_finished_drawings_with_this_many": 0.8471,
+      "mean_raw_confidence": 0.6895
+    },
+    {
+      "strokes": 10,
+      "prefixes": 6459,
+      "top1": 0.7249,
+      "top5": 0.9045,
+      "top1_finished_drawings_with_this_many": 0.8475,
+      "mean_raw_confidence": 0.6795
+    },
+    {
+      "strokes": 11,
+      "prefixes": 4820,
+      "top1": 0.712,
+      "top5": 0.8959,
+      "top1_finished_drawings_with_this_many": 0.8037,
+      "mean_raw_confidence": 0.668
+    },
+    {
+      "strokes": 12,
+      "prefixes": 3628,
+      "top1": 0.7023,
+      "top5": 0.8908,
+      "top1_finished_drawings_with_this_many": 0.7873,
+      "mean_raw_confidence": 0.6558
+    }
+  ],
+  "accuracy_by_share_of_ink": [
+    {
+      "ink_from": 0.0,
+      "ink_to": 0.1,
+      "prefixes": 4990,
+      "top1": 0.0246,
+      "top5": 0.0814
+    },
+    {
+      "ink_from": 0.1,
+      "ink_to": 0.2,
+      "prefixes": 10539,
+      "top1": 0.0274,
+      "top5": 0.1101
+    },
+    {
+      "ink_from": 0.2,
+      "ink_to": 0.3,
+      "prefixes": 14063,
+      "top1": 0.0567,
+      "top5": 0.2116
+    },
+    {
+      "ink_from": 0.3,
+      "ink_to": 0.4,
+      "prefixes": 16814,
+      "top1": 0.1127,
+      "top5": 0.3396
+    },
+    {
+      "ink_from": 0.4,
+      "ink_to": 0.5,
+      "prefixes": 19359,
+      "top1": 0.2141,
+      "top5": 0.5146
+    },
+    {
+      "ink_from": 0.5,
+      "ink_to": 0.6,
+      "prefixes": 22647,
+      "top1": 0.3426,
+      "top5": 0.6844
+    },
+    {
+      "ink_from": 0.6,
+      "ink_to": 0.7,
+      "prefixes": 25333,
+      "top1": 0.4814,
+      "top5": 0.8152
+    },
+    {
+      "ink_from": 0.7,
+      "ink_to": 0.8,
+      "prefixes": 28669,
+      "top1": 0.6206,
+      "top5": 0.892
+    },
+    {
+      "ink_from": 0.8,
+      "ink_to": 0.9,
+      "prefixes": 31876,
+      "top1": 0.7679,
+      "top5": 0.9429
+    },
+    {
+      "ink_from": 0.9,
+      "ink_to": 1.0,
+      "prefixes": 88862,
+      "top1": 0.8603,
+      "top5": 0.9616
+    }
+  ],
+  "settling": {
+    "drawings_correct_when_finished": 44119,
+    "median_ink_to_settle": 0.8616,
+    "p90_ink_to_settle": 1.0
+  },
+  "calibration": {
+    "ece_raw_softmax": 0.0642,
+    "ece_table": 0.0027
+  },
+  "sticker_threshold": 0.8,
+  "sticker_policy_on_test": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.8781,
+      "precision": 0.7567,
+      "mean_ink_used": 0.7734,
+      "mean_strokes_used": 2.903
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.841,
+      "precision": 0.8069,
+      "mean_ink_used": 0.7967,
+      "mean_strokes_used": 3.122
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.783,
+      "precision": 0.8509,
+      "mean_ink_used": 0.8195,
+      "mean_strokes_used": 3.341
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.7592,
+      "precision": 0.8627,
+      "mean_ink_used": 0.8251,
+      "mean_strokes_used": 3.359
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.6267,
+      "precision": 0.9052,
+      "mean_ink_used": 0.8469,
+      "mean_strokes_used": 3.973
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.6,
+      "precision": 0.9148,
+      "mean_ink_used": 0.8534,
+      "mean_strokes_used": 4.009
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.4401,
+      "precision": 0.9454,
+      "mean_ink_used": 0.8713,
+      "mean_strokes_used": 4.578
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.3409,
+      "precision": 0.9569,
+      "mean_ink_used": 0.8793,
+      "mean_strokes_used": 5.389
+    }
+  ],
+  "sticker_policy_on_calibration": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.8779,
+      "precision": 0.756,
+      "mean_ink_used": 0.7746,
+      "mean_strokes_used": 2.886
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.8394,
+      "precision": 0.8061,
+      "mean_ink_used": 0.7972,
+      "mean_strokes_used": 3.094
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.7816,
+      "precision": 0.8498,
+      "mean_ink_used": 0.8198,
+      "mean_strokes_used": 3.319
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.7582,
+      "precision": 0.8619,
+      "mean_ink_used": 0.8256,
+      "mean_strokes_used": 3.347
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.6263,
+      "precision": 0.9065,
+      "mean_ink_used": 0.8472,
+      "mean_strokes_used": 3.953
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.5988,
+      "precision": 0.9168,
+      "mean_ink_used": 0.8532,
+      "mean_strokes_used": 3.987
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.4407,
+      "precision": 0.9457,
+      "mean_ink_used": 0.8715,
+      "mean_strokes_used": 4.564
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.3414,
+      "precision": 0.9545,
+      "mean_ink_used": 0.8779,
+      "mean_strokes_used": 5.364
+    }
+  ]
+}

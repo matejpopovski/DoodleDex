@@ -1,0 +1,37 @@
+[
+  {
+    "mutation": "line width 16 becomes 15",
+    "fixtures_failed": 194,
+    "of": 194
+  },
+  {
+    "mutation": "4x supersampling instead of 8x",
+    "fixtures_failed": 194,
+    "of": 194
+  },
+  {
+    "mutation": "RDP epsilon 2.0 becomes 2.5",
+    "fixtures_failed": 170,
+    "of": 194
+  },
+  {
+    "mutation": "scale to 256 instead of 255",
+    "fixtures_failed": 192,
+    "of": 194
+  },
+  {
+    "mutation": "no rounding to integers",
+    "fixtures_failed": 190,
+    "of": 194
+  },
+  {
+    "mutation": "drawing not centred",
+    "fixtures_failed": 194,
+    "of": 194
+  },
+  {
+    "mutation": "strokes union instead of composite",
+    "fixtures_failed": 148,
+    "of": 194
+  }
+]

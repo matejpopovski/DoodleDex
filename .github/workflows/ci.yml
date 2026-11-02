@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run ruff format --check ml scripts
+      - run: uv run ruff check ml scripts
+      - run: uv run pytest
+
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Warnings do not fail the build here: the runner's swift-format can be older than the one
+      # the tree was formatted with, and its opinions are not a reason for a red build.
+      - run: xcrun swift-format lint --recursive DoodleDex DoodleDexTests DoodleDexUITests Packages
+      - run: swift test --package-path Packages/DoodleCore
+      - run: scripts/ci-ios.sh

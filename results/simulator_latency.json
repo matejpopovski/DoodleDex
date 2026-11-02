@@ -1,0 +1,13 @@
+{
+  "compute_units" : "all (the simulator has no Neural Engine)",
+  "drawings" : 100,
+  "environment" : "iOS Simulator, running on the host Mac, not a phone",
+  "host" : "Apple M3 Max, 36 GB",
+  "inference_milliseconds_p50" : 0.988,
+  "inference_milliseconds_p95" : 1.192,
+  "iterations" : 500,
+  "preprocess_milliseconds_p50" : 0.246,
+  "preprocess_milliseconds_p95" : 0.542,
+  "runtime" : "26.5",
+  "simulated_device" : "iPhone18,1"
+}

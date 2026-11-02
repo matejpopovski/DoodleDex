@@ -1,0 +1,9 @@
+{
+  "attribution": "Trained on Google's Quick, Draw! dataset (CC BY 4.0)",
+  "dataset_url": "https://github.com/googlecreativelab/quickdraw-dataset",
+  "classes": 100,
+  "test_images": 250000,
+  "test_top1": 0.8868,
+  "test_top5": 0.9671,
+  "model_megabytes": 1.158
+}

@@ -37,4 +37,11 @@ final class ConfidenceTableTests: XCTestCase {
         XCTAssertTrue(Verdict(label: "cat", probability: 0.9, stickerThreshold: 0.8).canCollect)
         XCTAssertFalse(Verdict(label: "cat", probability: 0.5, stickerThreshold: 0.8).canCollect)
     }
+
+    func testArticlesReadNaturally() {
+        XCTAssertEqual(Naming.withArticle("house"), "a house")
+        XCTAssertEqual(Naming.withArticle("owl"), "an owl")
+        XCTAssertEqual(Naming.withArticle("hourglass"), "an hourglass")
+        XCTAssertEqual(Naming.withArticle("scissors"), "scissors")
+    }
 }

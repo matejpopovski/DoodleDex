@@ -1,0 +1,134 @@
+{
+  "chapters": [
+    {
+      "name": "Critters",
+      "categories": [
+        "ant",
+        "bee",
+        "butterfly",
+        "cat",
+        "crab",
+        "dolphin",
+        "duck",
+        "elephant",
+        "fish",
+        "frog",
+        "giraffe",
+        "kangaroo",
+        "octopus",
+        "owl",
+        "penguin",
+        "pig",
+        "rabbit",
+        "scorpion",
+        "shark",
+        "snail",
+        "snake",
+        "spider",
+        "zebra"
+      ]
+    },
+    {
+      "name": "Snacks",
+      "categories": [
+        "apple",
+        "banana",
+        "birthday cake",
+        "carrot",
+        "cookie",
+        "donut",
+        "grapes",
+        "hamburger",
+        "hot dog",
+        "ice cream",
+        "lollipop",
+        "mushroom",
+        "pineapple",
+        "pizza",
+        "strawberry",
+        "watermelon"
+      ]
+    },
+    {
+      "name": "Outdoors",
+      "categories": [
+        "cactus",
+        "cloud",
+        "flower",
+        "leaf",
+        "lightning",
+        "moon",
+        "mountain",
+        "palm tree",
+        "rainbow",
+        "snowflake",
+        "star",
+        "sun",
+        "tree"
+      ]
+    },
+    {
+      "name": "Rides",
+      "categories": [
+        "airplane",
+        "bicycle",
+        "bus",
+        "car",
+        "helicopter",
+        "hot air balloon",
+        "sailboat",
+        "submarine",
+        "tractor",
+        "train"
+      ]
+    },
+    {
+      "name": "Places",
+      "categories": [
+        "bridge",
+        "castle",
+        "door",
+        "fence",
+        "house",
+        "ladder",
+        "lighthouse",
+        "tent"
+      ]
+    },
+    {
+      "name": "Stuff",
+      "categories": [
+        "alarm clock",
+        "bed",
+        "book",
+        "bowtie",
+        "camera",
+        "candle",
+        "chair",
+        "crown",
+        "diamond",
+        "envelope",
+        "eyeglasses",
+        "fork",
+        "guitar",
+        "hammer",
+        "hat",
+        "headphones",
+        "hourglass",
+        "key",
+        "light bulb",
+        "pants",
+        "pencil",
+        "piano",
+        "saw",
+        "scissors",
+        "shoe",
+        "skull",
+        "smiley face",
+        "snowman",
+        "sword",
+        "t-shirt"
+      ]
+    }
+  ]
+}

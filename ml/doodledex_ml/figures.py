@@ -62,9 +62,9 @@ def partial_figure() -> None:
     axes.annotate(
         f"Top-1 {top1[-1]:.1f}",
         (centres[-1], top1[-1]),
-        xytext=(-4, -14),
+        xytext=(4, -26),
         textcoords="offset points",
-        ha="right",
+        ha="center",
         color=INK,
         fontsize=9,
     )

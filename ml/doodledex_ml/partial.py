@@ -20,10 +20,10 @@ from doodledex_ml.calibration import expected_calibration_error, fit_confidence_
 from doodledex_ml.classes import CLASSES
 from doodledex_ml.data import DATA_DIR, REPO_ROOT, SPLITS, STROKE_TEST_RANGE, iter_raw, load_bitmaps
 from doodledex_ml.evaluate import load_network, probabilities
+from doodledex_ml.partial_metrics import by_ink, by_strokes, first_firing, stable_point
 from doodledex_ml.pipeline import Stroke, preprocess
 
 PREFIX_LIMIT = 24
-INK_BINS = np.linspace(0.0, 1.0, 11)
 THRESHOLDS = (0.5, 0.6, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95)
 TARGET_STICKER_PRECISION = 0.9
 APP_RESOURCES = REPO_ROOT / "DoodleDex" / "Resources"
@@ -97,85 +97,6 @@ def score(split: dict[str, np.ndarray], network, device: torch.device) -> dict[s
     }
 
 
-def first_firing(split, scored, calibrated, threshold: float) -> dict:
-    """What the sticker offer does: it fires at the first prefix whose probability clears the bar.
-
-    Picking the first of several looks is a selection effect, so precision here can be well under
-    the per-prefix probability. That is why the threshold is chosen on this metric.
-    """
-    order = np.lexsort((split["done"], split["drawing"]))
-    drawings = split["drawing"][order]
-    above = calibrated[order] >= threshold
-    fired = np.flatnonzero(above)
-    first_row = fired[np.unique(drawings[fired], return_index=True)[1]]
-    picks = order[first_row]
-    drawing_count = np.unique(split["drawing"]).size
-    return {
-        "threshold": threshold,
-        "coverage": round(first_row.size / drawing_count, 4),
-        "precision": round(float(scored["top1"][picks].mean()), 4) if picks.size else None,
-        "mean_ink_used": round(float(split["ink"][picks].mean()), 4) if picks.size else None,
-        "mean_strokes_used": round(float(split["done"][picks].mean()), 3) if picks.size else None,
-    }
-
-
-def stable_point(split, scored) -> dict:
-    """Fraction of ink at which the guess turns correct and stays correct to the end."""
-    order = np.lexsort((split["done"], split["drawing"]))
-    drawings = split["drawing"][order]
-    correct = scored["top1"][order]
-    ink = split["ink"][order]
-    results = []
-    for rows in np.split(np.arange(order.size), np.flatnonzero(np.diff(drawings)) + 1):
-        if not correct[rows[-1]]:
-            continue
-        wrong = rows[~correct[rows]]
-        settled = rows[0] if wrong.size == 0 else wrong[-1] + 1
-        results.append(ink[settled])
-    return {
-        "drawings_correct_when_finished": len(results),
-        "median_ink_to_settle": round(float(np.median(results)), 4),
-        "p90_ink_to_settle": round(float(np.percentile(results, 90)), 4),
-    }
-
-
-def by_strokes(split, scored) -> list[dict]:
-    rows = []
-    for done in range(1, 13):
-        selected = split["done"] == done
-        finished = split["done"] == split["count"]
-        rows.append(
-            {
-                "strokes": done,
-                "prefixes": int(selected.sum()),
-                "top1": round(float(scored["top1"][selected].mean()), 4),
-                "top5": round(float(scored["top5"][selected].mean()), 4),
-                "top1_finished_drawings_with_this_many": round(
-                    float(scored["top1"][selected & finished].mean()), 4
-                ),
-                "mean_raw_confidence": round(float(scored["confidence"][selected].mean()), 4),
-            }
-        )
-    return rows
-
-
-def by_ink(split, scored) -> list[dict]:
-    rows = []
-    bins = np.minimum(np.digitize(split["ink"], INK_BINS) - 1, len(INK_BINS) - 2)
-    for index in range(len(INK_BINS) - 1):
-        selected = bins == index
-        rows.append(
-            {
-                "ink_from": round(float(INK_BINS[index]), 1),
-                "ink_to": round(float(INK_BINS[index + 1]), 1),
-                "prefixes": int(selected.sum()),
-                "top1": round(float(scored["top1"][selected].mean()), 4),
-                "top5": round(float(scored["top5"][selected].mean()), 4),
-            }
-        )
-    return rows
-
-
 def pipeline_gap(split, scored, network, device: torch.device) -> dict:
     """Same drawings, same network: Google's bitmaps against this project's rendering of them."""
     finished = split["done"] == split["count"]
@@ -188,7 +109,8 @@ def pipeline_gap(split, scored, network, device: torch.device) -> dict:
             for label, index in zip(labels, indices, strict=True)
         ]
     )
-    published_top1 = probabilities(network, published, device).argmax(1) == labels
+    published_guess = probabilities(network, published, device).argmax(1)
+    published_top1 = published_guess == labels
     ours_top1 = scored["top1"][finished]
     recognized = split["recognized"][finished]
     error = np.abs(images.astype(np.int16) - published.astype(np.int16)).mean(axis=(1, 2))
@@ -200,7 +122,9 @@ def pipeline_gap(split, scored, network, device: torch.device) -> dict:
             float(published_top1[recognized].mean()), 4
         ),
         "share_recognized_by_the_game": round(float(recognized.mean()), 4),
-        "guesses_that_changed": round(float((published_top1 != ours_top1).mean()), 4),
+        "top_guess_changed": round(
+            float((published_guess != scored["prediction"][finished]).mean()), 4
+        ),
         "mean_abs_pixel_error": round(float(error.mean()), 3),
         "p99_abs_pixel_error": round(float(np.percentile(error, 99)), 3),
     }

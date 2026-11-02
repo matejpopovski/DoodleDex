@@ -1,0 +1,173 @@
+{
+  "split": "test",
+  "index_range_per_class": [
+    500,
+    3000
+  ],
+  "images": 250000,
+  "classes": 100,
+  "parameters": 299780,
+  "top1": 0.8868,
+  "top5": 0.9671,
+  "hardest_classes": [
+    {
+      "category": "frog",
+      "top1": 0.622
+    },
+    {
+      "category": "dolphin",
+      "top1": 0.7012
+    },
+    {
+      "category": "moon",
+      "top1": 0.7568
+    },
+    {
+      "category": "light bulb",
+      "top1": 0.7696
+    },
+    {
+      "category": "bridge",
+      "top1": 0.784
+    },
+    {
+      "category": "shark",
+      "top1": 0.7888
+    },
+    {
+      "category": "cat",
+      "top1": 0.8
+    },
+    {
+      "category": "spider",
+      "top1": 0.8092
+    },
+    {
+      "category": "scorpion",
+      "top1": 0.8172
+    },
+    {
+      "category": "owl",
+      "top1": 0.8228
+    }
+  ],
+  "easiest_classes": [
+    {
+      "category": "hourglass",
+      "top1": 0.9412
+    },
+    {
+      "category": "donut",
+      "top1": 0.9424
+    },
+    {
+      "category": "camera",
+      "top1": 0.95
+    },
+    {
+      "category": "house",
+      "top1": 0.9504
+    },
+    {
+      "category": "snail",
+      "top1": 0.952
+    },
+    {
+      "category": "ladder",
+      "top1": 0.9544
+    },
+    {
+      "category": "bicycle",
+      "top1": 0.9552
+    },
+    {
+      "category": "envelope",
+      "top1": 0.9556
+    },
+    {
+      "category": "sailboat",
+      "top1": 0.9592
+    },
+    {
+      "category": "t-shirt",
+      "top1": 0.9592
+    }
+  ],
+  "top_confusions": [
+    {
+      "true": "light bulb",
+      "predicted": "hot air balloon",
+      "rate": 0.1184
+    },
+    {
+      "true": "dolphin",
+      "predicted": "shark",
+      "rate": 0.1132
+    },
+    {
+      "true": "moon",
+      "predicted": "banana",
+      "rate": 0.07
+    },
+    {
+      "true": "banana",
+      "predicted": "moon",
+      "rate": 0.0656
+    },
+    {
+      "true": "hot air balloon",
+      "predicted": "light bulb",
+      "rate": 0.0648
+    },
+    {
+      "true": "moon",
+      "predicted": "cookie",
+      "rate": 0.0628
+    },
+    {
+      "true": "spider",
+      "predicted": "crab",
+      "rate": 0.0592
+    },
+    {
+      "true": "shark",
+      "predicted": "dolphin",
+      "rate": 0.0584
+    },
+    {
+      "true": "crab",
+      "predicted": "spider",
+      "rate": 0.0496
+    },
+    {
+      "true": "hot dog",
+      "predicted": "hamburger",
+      "rate": 0.0488
+    },
+    {
+      "true": "cat",
+      "predicted": "pig",
+      "rate": 0.048
+    },
+    {
+      "true": "strawberry",
+      "predicted": "pineapple",
+      "rate": 0.0468
+    },
+    {
+      "true": "tractor",
+      "predicted": "car",
+      "rate": 0.046
+    },
+    {
+      "true": "car",
+      "predicted": "tractor",
+      "rate": 0.0452
+    },
+    {
+      "true": "shark",
+      "predicted": "fish",
+      "rate": 0.0448
+    }
+  ]
+}
