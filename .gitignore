@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Quick, Draw! downloads and training output (rebuilt by the commands in the README)
+# Rooted, because git on macOS is case-insensitive and a bare data/ also hides the Data/ folder
+# inside an .mlpackage.
+/data/
+/checkpoints/
+*.pt
+
+# Xcode
+build/
+DerivedData/
+*.xcresult
+xcuserdata/
+*.xcuserstate
+.swiftpm/
+.build/
+
+.DS_Store
