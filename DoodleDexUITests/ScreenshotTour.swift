@@ -33,11 +33,14 @@ final class ScreenshotTour: XCTestCase {
         try capture("01-empty")
 
         let house = Shapes.house
-        robot.draw(Array(house.prefix(3)))
-        XCTAssertTrue(robot.waitForFootnote(strokes: 3))
-        try capture("02-partial")
-        robot.draw(Array(house.dropFirst(3)))
-        XCTAssertTrue(robot.waitForFootnote(strokes: house.count))
+        for (index, stroke) in house.enumerated() {
+            robot.stroke(stroke.0, stroke.1)
+            XCTAssertTrue(robot.waitForFootnote(strokes: index + 1))
+            try capture("frame-\(index + 1)")
+            if index == 2 {
+                try capture("02-partial")
+            }
+        }
         try capture("03-sure")
         app.buttons["sketch.collect"].tap()
         try capture("04-sticker")

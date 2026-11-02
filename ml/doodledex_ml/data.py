@@ -3,12 +3,13 @@
 Source: Google's Quick, Draw! dataset, CC BY 4.0
 (https://github.com/googlecreativelab/quickdraw-dataset).
 
-Three facts about the published files shape this module, all checked by `verify_dataset`:
+Three facts about the published files shape this module:
 
-- Every category file is shuffled over time and country, so a prefix is a fair sample. Reading only
-  the first records keeps disk use bounded without biasing the data.
-- Record i of `numpy_bitmap/<c>.npy` and line i of `raw/<c>.ndjson` are the same drawing. That lets
-  a held-out bitmap be paired with the strokes that produced it.
+- Category files appear shuffled: timestamps and countries sampled at five offsets through
+  `simplified/cat.ndjson` span the same range at every offset. Reading only the first records keeps
+  disk use bounded, on the assumption that the other classes are shuffled the same way.
+- Record i of `numpy_bitmap/<c>.npy` and line i of `raw/<c>.ndjson` are the same drawing, which lets
+  a held-out bitmap be paired with the strokes that produced it. `verify_dataset` measures this.
 - The `.npy` bitmaps include drawings the game's own recognizer rejected (`recognized: false`).
   Test accuracy here includes them.
 
